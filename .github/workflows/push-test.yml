@@ -27,10 +27,11 @@ jobs:
         mkdir test
         cd test
         touch $(date +%s).txt
+        python3 -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' < index.yaml > index.json
     - name: Commit files
       run: |
         git config --local user.email "57953088+juusoautiosalo@users.noreply.github.com"
-        git config --local user.name "modifier[bot]"
+        git config --local user.name "actions-push-test[bot]"
         git add -A
         git commit -m "Add test file for modifier action" -a
     - name: Push changes
