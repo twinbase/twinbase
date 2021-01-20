@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "privacy": "public",
+  "dt-id": "http://d-t.fi/konecranes-K16052",
+  "hosting-iri": "https://dtw.dtp.fi/crane-ilmatar",
+  "name": "Ilmatar crane",
+  "description": "Ilmatar is an overhead crane located at Aalto University.",
+  "owner": {
+    "name": "Aalto-yliopistosäätiö",
+    "website": "https://www.aalto.fi"
+  },
+  "contact": {
+    "name": "Juuso Autiosalo",
+    "website": "https://people.aalto.fi/juuso.autiosalo"
+  },
+  "location": {
+    "streetAddress": "Otaniemi",
+    "gpsCoordinates": "60.1841° N, 24.8301° E"
+  },
+  "manufacturer": {
+    "name": "Konecranes",
+    "website": "https://www.konecranes.com"
+  },
+  "features": [
+    {
+      "name": "OSEMA",
+      "description": "OSEMA allows managing retrofitted sensors attached to the crane.",
+      "address": "https://example.sensor.fi/sensors/browse",
+      "apiAddress": "https://digi.kaksonen.fi/api/v1.0/",
+      "requirement": "User account is needed.",
+      "documentation": "https://github.com/AaltoIIC/OSEMA/blob/master/Documentation.md"
+    },
+    {
+      "name": "MindSphere",
+      "description": "MindSphere stores historical data of the crane",
+      "address": "https://crane-fleetmanager.eu1.mindsphere.io/",
+      "requirement": "User account for the aiicd1 tenant is required.",
+      "documentation": "http://mindsphere.io"
+    },
+    {
+      "name": "OPC UA",
+      "description": "OPC UA server allows real-time monitoring and control of the crane",
+      "requirement": "Access to Ilmatar local network, details available on request."
+    },
+    {
+      "name": "GraphQL Interface",
+      "description": "This interface allows accessing OPC UA using GraphQL",
+      "requirement": "Access to Ilmatar local network, details available on request.",
+      "address": "192.168.0.77",
+      "documentation": "https://github.com/AaltoIIC/OPC-UA-GraphQL-Wrapper"
+    },
+    {
+      "name": "Teamcenter",
+      "description": "Teamcenter stores PLM data of the crane. Includes 3D model of the crane without business criticial parts",
+      "requirement": "Access to Aalto Teamcenter.",
+      "documentation": "teamcenter.com"
+    },
+    {
+      "name": "Ilmatar OIE",
+      "description": "The website of Ilmatar OIE provides human readable information about the crane.",
+      "address": "https://aalto.fi/ilmatar"
+    }
+  ]
+}
