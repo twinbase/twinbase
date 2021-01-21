@@ -1,3 +1,4 @@
+cd docs/ 
 for dir in */ ; do
   echo "$dir"
   filepath=./${dir}index.yaml
