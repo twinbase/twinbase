@@ -27,6 +27,12 @@ jobs:
         cd test
         touch $(date +%s).txt
         python3 -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' < index.yaml > index.json
+    - name: 
+      run: |
+        # cd test
+        "${GITHUB_WORKSPACE}/.github/script-yamls-to-jsons.sh"
+        # touch $(date +%s).txt
+        # python3 -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' < index.yaml > index.json
     - name: Commit files
       run: |
         git config --local user.email "57953088+juusoautiosalo@users.noreply.github.com"
