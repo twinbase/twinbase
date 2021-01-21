@@ -20,7 +20,8 @@
     .then((data) => {
       const tree = JsonView.createTree(data);
       JsonView.render(tree, document.querySelector('.root'));
-      JsonView.expandChildren(tree);
+      // JsonView.expandChildren(tree);
+	  JsonView.showNodeChildren(tree);
     })
     .catch((err) => {
       console.log(err);

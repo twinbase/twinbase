@@ -237,6 +237,7 @@ var JsonView = (function (exports) {
   exports.render = render;
   exports.renderJSON = renderJSON;
   exports.traverseTree = traverseTree;
+  exports.showNodeChildren = showNodeChildren;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
