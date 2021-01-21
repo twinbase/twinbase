@@ -22,11 +22,6 @@ jobs:
       with:
         persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-    - name: Create local changes
-      run: |
-        cd test
-        touch $(date +%s).txt
-        python3 -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' < index.yaml > index.json
     - name: Generate JSONs from YAMLs
       run: |
         chmod +x "${GITHUB_WORKSPACE}/.github/script-yamls-to-jsons.sh"
