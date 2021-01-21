@@ -16,6 +16,9 @@ location:
 manufacturer: 
   name: "Konecranes"
   website: "https://www.konecranes.com"
+relations:
+  - dt-id: "http://d-t.fi/3091b292-6104-4ef3-a30f-8275b46b5ab4"
+    relationType: "parent"
 features:
   - name: "OSEMA"
     description: "OSEMA allows managing retrofitted sensors attached to the crane."
