@@ -17,3 +17,6 @@ features:
   - name: "Another website"
     description: "Some old website made by Juuso, hosted by Aalto."
     address: "https://users.aalto.fi/~autiosj1/"
+  - name: "GiHub profile"
+    description: "Juuso's GitHub profile"
+    address: "https://github.com/juusoautiosalo"
