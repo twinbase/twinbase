@@ -1,4 +1,4 @@
- for dir in */ ; do
+for dir in */ ; do
   echo "$dir"
   filepath=./${dir}index.yaml
   echo $filepath
