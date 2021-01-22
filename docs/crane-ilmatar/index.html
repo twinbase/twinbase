@@ -19,8 +19,7 @@
     fetch('index.json')
     .then(response => response.json())
     .then(data => {
-      var content = data.name;
-	  document.getElementById('name').innerHTML = content;
+	  document.getElementById('name').innerHTML = data.name;
     })
   };
 </script>
