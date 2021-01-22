@@ -10,11 +10,21 @@
 </head>
 <body>
 
-  <h1>DT document</h1>
+  <h1>DT document for <span id="name"></span></h1>
 
   <p>Feel free to browse the DT document below.</p>
   <p>You can also look at the raw <a href="index.json">JSON</a> and <a href="index.yaml">YAML</a> files.</p>
-	
+  <script>
+  window.onload = function(){
+    fetch('index.json')
+    .then(response => response.json())
+    .then(data => {
+      var content = data.name;
+	  document.getElementById('name').innerHTML = content;
+    })
+  };
+</script>
+
   <div class="root"></div>
 
   <script type="text/javascript" src="/jsonview.bundle.js"></script>
