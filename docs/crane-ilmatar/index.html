@@ -19,7 +19,7 @@
   <p>Browse the DT document below by clicking the arrows.</p> 
 
   <script>
-  window.onload = function(){
+
     fetch('index.json')
     .then(response => response.json())
     .then(data => {
@@ -27,7 +27,7 @@
 	  document.getElementById('dt-id').href = data['dt-id'];
 	  document.getElementById('dt-id').innerHTML = data['dt-id'];
     })
-  };
+
   </script>
 
   <div class="root"></div>
