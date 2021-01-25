@@ -11,6 +11,8 @@
 <body>
 
   <h1>DT document for <span id="name"></span></h1>
+  
+  <p>DT identifier: <a id="dt-id" href=""></a></p>
 
   <p>Feel free to browse the DT document below.</p>
   <p>You can also look at the raw <a href="index.json">JSON</a> and <a href="index.yaml">YAML</a> files.</p>
@@ -20,9 +22,11 @@
     .then(response => response.json())
     .then(data => {
 	  document.getElementById('name').innerHTML = data.name;
+	  document.getElementById('dt-id').href = data['dt-id'];
+	  document.getElementById('dt-id').innerHTML = data['dt-id'];
     })
   };
-</script>
+  </script>
 
   <div class="root"></div>
 
