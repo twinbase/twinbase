@@ -13,7 +13,7 @@ print('Repourl: ' + repo)
 print('Twin path:' + path)
 
 with open(r'index.yaml') as file:
-  data = yaml.load(file, Loader=yaml.FullLoader)
+  data = yaml.load(file)
 
 editurl = 'https://github.com/' + repo + '/edit/main/docs/' + path + 'index.yaml'
 data['testrun']['edit'] = editurl
