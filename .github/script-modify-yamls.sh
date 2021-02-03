@@ -3,9 +3,7 @@ cd docs/
 for dir in */ ; do
   cd $dir
   echo "Adding editurl to ${dir}index.yaml"
-  echo "Current directory: $PWD"
-  echo "ls:"
-  ls
+  python3 -V
   python3 ${GITHUB_WORKSPACE}/.github/add-editurl.py "${GITHUB_REPOSITORY}" "${dir}" # (Hint: trailing / is included in ${dir})
   cd ..
 done
