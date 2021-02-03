@@ -1,22 +1,23 @@
-version: "1.0"
-privacy: "public"
-dt-id: "http://d-t.fi/juuso"
-hosting-iri: "https://dtw.dtp.fi/juuso"
-name: "Juuso Autiosalo"
-description: "Juuso is working as a doctoral candidate at Aalto University."
-contact: 
-  website: "https://people.aalto.fi/juuso.autiosalo"
+version: '1.0'
+privacy: public
+dt-id: http://d-t.fi/juuso
+hosting-iri: https://dtw.dtp.fi/juuso
+name: Juuso Autiosalo
+description: Juuso is working as a doctoral candidate at Aalto University.
+contact:
+  website: https://people.aalto.fi/juuso.autiosalo
 location:
-  streetAddress: "Helsinki, Finland"
+  streetAddress: Helsinki, Finland
 features:
-  - name: "Personal website"
-    address: "https://me.juu.so"
-  - name: "LinkedIn profile"
-    description: "Juuso occasionally uses LinkedIn."
-    address: "https://www.linkedin.com/in/juuso-autiosalo"
-  - name: "Another website"
-    description: "Some old website made by Juuso, hosted by Aalto."
-    address: "https://users.aalto.fi/~autiosj1/"
-  - name: "GiHub profile"
-    description: "Juuso's GitHub profile"
-    address: "https://github.com/juusoautiosalo"
+- name: Personal website
+  address: https://me.juu.so
+- name: LinkedIn profile
+  description: Juuso occasionally uses LinkedIn.
+  address: https://www.linkedin.com/in/juuso-autiosalo
+- name: Another website
+  description: Some old website made by Juuso, hosted by Aalto.
+  address: https://users.aalto.fi/~autiosj1/
+- name: GiHub profile
+  description: Juuso's GitHub profile
+  address: https://github.com/juusoautiosalo
+edit: https://github.com/juusoautiosalo/twinrepo-test/edit/main/docs/juuso/index.yaml

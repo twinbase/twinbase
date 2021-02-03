@@ -1,18 +1,19 @@
-version: "1.0"
-privacy: "public"
-dt-id: "http://d-t.fi/3091b292-6104-4ef3-a30f-8275b46b5ab4"
-hosting-iri: "https://dtw.dtp.fi/lab-room-K3-143"
-name: "AIIC mechatronics hall"
-description: "A laboratory room located at Aalto University."
-owner: 
-  name: "Aalto-yliopistosäätiö"
-  website: "https://www.aalto.fi"
-contact: 
-  name: "Juuso Autiosalo"
-  website: "https://people.aalto.fi/juuso.autiosalo"
+version: '1.0'
+privacy: public
+dt-id: http://d-t.fi/3091b292-6104-4ef3-a30f-8275b46b5ab4
+hosting-iri: https://dtw.dtp.fi/lab-room-K3-143
+name: AIIC mechatronics hall
+description: A laboratory room located at Aalto University.
+owner:
+  name: "Aalto-yliopistos\xE4\xE4ti\xF6"
+  website: https://www.aalto.fi
+contact:
+  name: Juuso Autiosalo
+  website: https://people.aalto.fi/juuso.autiosalo
 location:
-  streetAddress: "Otaniemi"
-  gpsCoordinates: "60.1841° N, 24.8301° E"
+  streetAddress: Otaniemi
+  gpsCoordinates: "60.1841\xB0 N, 24.8301\xB0 E"
 relations:
-  - dt-id: "http://d-t.fi/konecranes-K16052"
-    relationType: "child"
+- dt-id: http://d-t.fi/konecranes-K16052
+  relationType: child
+edit: https://github.com/juusoautiosalo/twinrepo-test/edit/main/docs/lab-room-K3-143/index.yaml
