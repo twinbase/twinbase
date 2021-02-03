@@ -2,17 +2,12 @@ import sys, yaml, json
 
 # ARGS: repourl, path
 
-print('YAML version: ' + yaml.__version__)
-
 try:
   repo = sys.argv[1]
   path = sys.argv[2]
 except:
   print('Enter arguments: repourl, path')
   exit()
-
-print('Repourl: ' + repo)
-print('Twin path:' + path)
 
 with open(r'index.yaml') as file:
   data = yaml.load(file, Loader=yaml.FullLoader)
