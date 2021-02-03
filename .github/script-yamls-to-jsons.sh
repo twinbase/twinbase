@@ -5,7 +5,7 @@ for dir in */ ; do
   echo "Converting to JSON: $filepath"
   cd $dir
   # Convert index.yaml to index.json with python:
-  python3 -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)' < index.yaml > index.json
+  python3 -c 'import sys, yaml, json; json.dump(yaml.load(sys.stdin, Loader=yaml.FullLoader), sys.stdout, indent=4)' < index.yaml > index.json
   cd ..
 done
 cd ..

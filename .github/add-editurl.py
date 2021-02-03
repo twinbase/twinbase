@@ -15,7 +15,7 @@ print('Repourl: ' + repo)
 print('Twin path:' + path)
 
 with open(r'index.yaml') as file:
-  data = yaml.load(file)
+  data = yaml.load(file, Loader=yaml.FullLoader)
 
 editurl = 'https://github.com/' + repo + '/edit/main/docs/' + path + 'index.yaml'
 data['edit'] = editurl
