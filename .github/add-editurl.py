@@ -15,7 +15,7 @@ with open(r'index.yaml') as file:
 editurl = 'https://github.com/' + repo + '/edit/main/docs/' + path + 'index.yaml'
 data['edit'] = editurl
 
-with open(r'index2.yaml', 'w') as filew:
+with open(r'index.yaml', 'w') as filew:
   doc = yaml.dump(data, filew, default_flow_style=False, sort_keys=False)
 
 print('Added editurl: ' + editurl)
