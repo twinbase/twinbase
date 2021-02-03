@@ -2,6 +2,8 @@ import sys, yaml, json
 
 # ARGS: repourl, path
 
+print('YAML version: ' + yaml.__version__)
+
 try:
   repo = sys.argv[1]
   path = sys.argv[2]
