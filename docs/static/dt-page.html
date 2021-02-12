@@ -17,6 +17,8 @@
   <p>DT identifier: <a id="dt-id" href=""></a></p>
   
   <p>You can download the raw <a href="index.json">JSON</a> and <a href="index.yaml">YAML</a> files.</p>
+
+  <p>Edit the document <a id="edit" href="">here</a>.</p>
   
   <p>Browse the DT document below by clicking the arrows.</p> 
 
@@ -28,6 +30,7 @@
 	  document.getElementById('name').innerHTML = data.name;
 	  document.getElementById('dt-id').href = data['dt-id'];
 	  document.getElementById('dt-id').innerHTML = data['dt-id'];
+    document.getElementById('edit').href = data.edit;
     })
 
   </script>
