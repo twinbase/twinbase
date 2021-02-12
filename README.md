@@ -1,7 +1,7 @@
 # twinrepo-test
 
-This domain contains digital twin documents.
+This is a repository for developing a git-based management and distribution platform for meta-level digital twins
 
-The files and more info available at [https://github.com/juusoautiosalo/twinrepo-test](https://github.com/juusoautiosalo/twinrepo-test)
+Under development!
 
-This page is hosted at [dtw.dtp.fi](https://dtw.dtp.fi) (As shown in the [CNAME file](https://github.com/juusoautiosalo/twinrepo-test/blob/main/CNAME))
+Current test hosting server is available at [dtw.dtp.fi](https://dtw.dtp.fi). See the [docs folder](https://github.com/juusoautiosalo/twinrepo-test/tree/main/docs) for subpages
