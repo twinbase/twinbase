@@ -33,10 +33,11 @@ jobs:
         python3 -m pip install --upgrade pip
         pip install pyyaml
         # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Modify YAMLs
+    - name: Modify twin YAMLs
       run: |
-        chmod +x "${GITHUB_WORKSPACE}/.github/script-modify-yamls.sh"
-        "${GITHUB_WORKSPACE}/.github/script-modify-yamls.sh"
+        cd docs/
+        python3 ${GITHUB_WORKSPACE}/.github/modify-twin-yamls.py
+        cd ..
         git commit -m "Automodified YAML file" -a || echo "Warning: git commit returned error code $? (Hopefully nothing to commit)"
     - name: Generate JSONs from YAMLs
       run: |
