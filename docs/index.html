@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
+  <meta charset="UTF-8">
+
   <title>DT document server</title>
   
   <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
@@ -10,12 +13,34 @@
   <h1>DT document hosting server</h1>
 
   <p>This domain contains digital twin documents. They are found in subpages of this page.</p>
-
-  </p>The files and more info available in the <a href="https://github.com/juusoautiosalo/twinrepo-test">GitHub repo</a>.</p>
-
-  </p>Wait for more...</p>
   
   <p>Create a new DT document <a href="https://github.com/juusoautiosalo/twinrepo-test/new/main?filename=docs/editthiswithbackspace/index.yaml&value=Copy%20a%20DT%20document%20template%20here">here</a></p>
   
+  <p>The files and more info available in the <a href="https://github.com/juusoautiosalo/twinrepo-test">GitHub repo</a>.</p>
+  
+  <p><b>These twins live here:</b></p>
+
+  <ul id="twinList"></ul>
+
+  <script>
+    document.body.onload = addElement;
+
+    function addElement () {
+      fetch('index.json')
+      .then(response => response.json())
+      .then(basedoc => {
+        for(var i = 0; i < basedoc.twins.length; i++) {
+          var twinLi = document.createElement("li");
+          const twinA = document.createElement("a");
+          twinA.href = basedoc.twins[i].url;
+          var twinText = document.createTextNode(basedoc.twins[i].name);
+          twinA.appendChild(twinText);
+          twinLi.appendChild(twinA);
+          document.getElementById("twinList").appendChild(twinLi);
+        }
+      })
+    }
+  </script>
+
 </body>
 </html>
