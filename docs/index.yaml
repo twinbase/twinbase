@@ -1,0 +1,8 @@
+baseurl: https://dtw.dtp.fi
+twins:
+- name: Juuso Autiosalo
+  url: https://dtw.dtp.fi/juuso
+- name: Ilmatar crane
+  url: https://dtw.dtp.fi/crane-ilmatar
+- name: AIIC mechatronics hall
+  url: https://dtw.dtp.fi/lab-room-K3-143
