@@ -21,3 +21,4 @@ features:
   description: Juuso's GitHub profile
   address: https://github.com/juusoautiosalo
 edit: https://github.com/juusoautiosalo/twinrepo-test/edit/main/docs/juuso/index.yaml
+baseurl: https://dtw.dtp.fi

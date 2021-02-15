@@ -17,3 +17,4 @@ relations:
 - dt-id: http://d-t.fi/konecranes-K16052
   relationType: child
 edit: https://github.com/juusoautiosalo/twinrepo-test/edit/main/docs/lab-room-K3-143/index.yaml
+baseurl: https://dtw.dtp.fi
