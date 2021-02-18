@@ -7,7 +7,7 @@ with open('CNAME') as f:
 baseurl = 'https://' + lines[0]
 
 for folder in os.listdir(curdir):
-    if os.path.isdir(folder) and folder != 'static':
+    if os.path.isdir(folder) and folder != 'static' and folder != 'new-twin':
         print('Modifying YAML in folder: ' + folder)
         
         with open(folder + '/index.yaml', 'r') as yamlfile:
