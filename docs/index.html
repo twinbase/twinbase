@@ -8,19 +8,42 @@
   
   <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    div.max600 {
+      max-width: 600px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1><strong>Twinbase</strong> <i> - platform for meta-level digital twins</i></h1>
+  <header>
+    <a href="/" class="logo">Twinbase</a>
+    <a id="repo" href="" class="button">Repository</a>
+    <a href="http://twinbase.org" class="button">Docs</a>
+</header>
 
-  <p>This domain contains digital twin documents. They are found in subpages of this page.</p>
+<div class="container">
+<div class="row">
   
-  <p>Create new twin <a href="new-twin">here</a></p>
-  
-  <p>The files and more info available in the <a href="https://github.com/juusoautiosalo/twinrepo-test">GitHub repo</a>.</p>
+  <div class="col-md-1 col-lg-3"></div>
+  <div class="max600">
 
-  <p><b>Twins living in this base:</b></p>
+    <h1><strong>Twinbase</strong> <i> - platform for meta-level digital twins</i></h1>
 
-  <ul id="twinList"></ul>
+    <p>This domain contains digital twin documents. They are found in subpages of this page.</p>
+    
+    <p>Create new twin <a href="new-twin">here</a></p>
+
+    <p>The files and more info available in the <a href="https://github.com/juusoautiosalo/twinrepo-test">GitHub repo</a>.</p>
+
+    <p><b>Twins living in this base:</b></p>
+
+    <ul id="twinList"></ul>
+
+  </div>
+
+</div>
+</div>
 
   <script>
     document.body.onload = addElement;
@@ -37,6 +60,7 @@
           twinA.appendChild(twinText);
           twinLi.appendChild(twinA);
           document.getElementById("twinList").appendChild(twinLi);
+          document.getElementById('repo').href = basedoc.repo_url;
         }
       })
     }

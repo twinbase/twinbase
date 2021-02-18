@@ -8,24 +8,49 @@
   <link rel="stylesheet" type="text/css" href="/static/jsonview.bundle.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    div.max600 {
+      max-width: 600px;
+    }
+  </style>
 
 </head>
+
 <body>
 
-  <h1>DT document for <span id="name"></span></h1>
-  
-  <p>DT identifier: <a id="dt-id" href=""></a></p>
-  
-  <p>You can download the raw <a href="index.json">JSON</a> and <a href="index.yaml">YAML</a> files.</p>
+<header>
+    <a href="/" class="logo">Twinbase</a>
+    <a id="repo" href="" class="button">Repository</a>
+    <a href="http://twinbase.org" class="button">Docs</a>
+</header>
 
-  <p>Edit the document <a id="edit" href="">here</a>.</p>
-
-  <p>Twinbase page <a id="baseurl" href="">here</a>.</p>
+<div class="container">
+<div class="row">
   
-  <p>Browse the DT document below by clicking the arrows.</p> 
+  <div class="col-md-1 col-lg-3"></div>
+  <div class="max600">
+
+    <h1>DT document for <span id="name"></span></h1>
+    
+    <p>DT identifier: <a id="dt-id" href=""></a></p>
+    
+    <p>You can download the raw <a href="index.json">JSON</a> and <a href="index.yaml">YAML</a> files.</p>
+
+    <p>Edit the document <a id="edit" href="">here</a>.</p>
+
+    <p>Twinbase page <a id="baseurl" href="">here</a>.</p>
+    
+    <p>Browse the DT document below by clicking the arrows.</p> 
+
+    <div class="root"></div>
+
+  </div>
+
+</div>
+</div>
+
 
   <script>
-
     fetch('index.json')
     .then(response => response.json())
     .then(data => {
@@ -36,12 +61,10 @@
     document.getElementById('edit').href = data.edit;
     document.getElementById('baseurl').href = data.baseurl;
     })
-
   </script>
 
-  <div class="root"></div>
-
   <script type="text/javascript" src="/static/jsonview.bundle.js"></script>
+  
   <script type="text/javascript">
     fetch('index.json')
     .then((res)=> {
@@ -56,12 +79,7 @@
     .catch((err) => {
       console.log(err);
     })
-
   </script>
-
-  <footer>
-    <p>The source code can be found from the <a href="https://github.com/juusoautiosalo/twinrepo-test">GitHub repository</a></p>
-  </footer>
 
 </body>
 </html>
