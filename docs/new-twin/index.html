@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Twinbase - New twin</title>
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        div.max600 {
+          max-width: 600px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <a href="/" class="logo">Twinbase</a>
+    <a id="repo" href="" class="button">Repository</a>
+    <a href="http://twinbase.org" class="button">Docs</a>
+</header>
+
+<div class="container">
+<div class="row">
+
+    <div class="col-md-1 col-lg-3"></div>
+    <div class="max600">
+
+        <h1>Create new DT document</h1>
+
+        <ol>
+            <li>Press the button below</li>
+            <ul>
+                <li><small>Note: If you are not the owner of this
+                    Twinbase, you will need to create a fork of 
+                    the repository and create a pull request.</small></li>
+            </ul>
+            <li>Modify the YAML file to your preferences</li>
+            <li>Press "Commit new file"</li>
+        </ol>
+        
+        <a id="create" href="" role="button" class="primary">Create new twin</a>
+
+        <p>
+            <small>UUID: <code id="uuid">-</code></small>
+        </p>
+
+        <button onclick="main()" class="small">Refresh UUID</button> 
+
+    </div>
+
+</div>
+</div>
+ 
+<script>
+    // uuidv4() function from: https://stackoverflow.com/a/2117523/15143100
+    function uuidv4() {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+            var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    }
+
+    function fetch_data() {
+        return fetch('../index.json')
+        .then(response => response.json())
+        .then(data => {
+            return data;
+        });
+    }
+
+    async function main() {
+        var data = await fetch_data();
+        fetch('template.yaml')
+        .then(response => response.text()) 
+        .then(template => {
+            var uuid = uuidv4();
+            var link = data.repo_url + '/new/main?filename=docs/' + uuid + '/index.yaml&value=' + encodeURI(template);
+            document.getElementById('create').href = link;
+            document.getElementById('uuid').innerHTML = uuid;
+        });
+        document.getElementById('repo').href = data.repo_url;
+    }
+
+    main();
+
+</script>
+
+</body>
+</html>
