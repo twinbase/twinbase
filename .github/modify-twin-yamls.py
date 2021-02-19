@@ -14,6 +14,15 @@ for folder in os.listdir(curdir):
             data = yaml.load(yamlfile, Loader=yaml.FullLoader)
         data['baseurl'] = baseurl
 
+        if data['dt-id'].split('|')[0] == 'autoassign':
+            data['dt-id'] = os.path.join(data['dt-id'].split('|')[1], folder)
+
+        if not (data['hosting-iri'] == os.path.join(baseurl, folder)):
+            data['hosting-iri'] = os.path.join(baseurl, folder)
+            print('::warning file=' + folder + '/index.yaml::Hosting IRI changed for DT-ID: ' \
+            + data['dt-id'] + ' . Hosting IRI is now ' + data['hosting-iri'] \
+            + ' . Please update the DT-ID registry if needed.')
+
         repo = os.environ["GITHUB_REPOSITORY"]
         editurl = 'https://github.com/' + repo + '/edit/main/docs/' + folder + '/index.yaml'
         print(editurl)
