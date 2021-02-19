@@ -50,9 +50,9 @@ for folder in os.listdir(curdir):
         # Test if DT-ID redirects to hosting IRI, give actions error if not
         if not (dtweb.client.fetch_host_url(data['dt-id']) == data['hosting-iri'] + '/'):
             print('::error file=' + folder + '/index.yaml::' \
-                + 'DT-ID of ' + data['name'] + ' does not redirect to its hosting IRI!\n' \
-                + '   DT-ID:       ' + data['dt-id'] + '\n' \
-                + '   Hosting IRI: ' + data['hosting-iri'] + '\n' \
-                + '==> Please update the DT-ID registry.')
+                + 'DT-ID of ' + data['name'] + ' does not redirect to its hosting IRI!' \
+                + ' ==> Please update the DT-ID registry.' \
+                + ' DT-ID: ' + data['dt-id'] \
+                + ' Hosting IRI: ' + data['hosting-iri'])
         else:
             print('Test successful: DT-ID redirects to hosting IRI for ' + data['name'])
