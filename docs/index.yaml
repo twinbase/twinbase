@@ -4,6 +4,8 @@ repo_url: https://github.com/juusoautiosalo/twinrepo-test
 twins:
 - name: Juuso Autiosalo
   url: https://dtw.dtp.fi/juuso
+- name: Test twin 2
+  url: https://dtw.dtp.fi/41cf7a74-558d-4214-bbd9-03865522f717
 - name: Ilmatar crane
   url: https://dtw.dtp.fi/crane-ilmatar
 - name: Test twin 1
