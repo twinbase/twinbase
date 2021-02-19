@@ -31,7 +31,7 @@ jobs:
     - name: Install python dependencies
       run: |
         python3 -m pip install --upgrade pip
-        pip install pyyaml
+        pip install pyyaml requests
         # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Modify twin YAMLs
       run: |
