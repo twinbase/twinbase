@@ -6,5 +6,7 @@ twins:
   url: https://dtw.dtp.fi/juuso
 - name: Ilmatar crane
   url: https://dtw.dtp.fi/crane-ilmatar
+- name: Test twin 1
+  url: https://dtw.dtp.fi/7a1adf2a-e5cd-4c13-b388-37bc0646723f
 - name: AIIC mechatronics hall
   url: https://dtw.dtp.fi/lab-room-K3-143
