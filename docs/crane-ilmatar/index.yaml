@@ -48,5 +48,5 @@ features:
   description: The website of Ilmatar OIE provides human readable information about
     the crane.
   address: https://aalto.fi/ilmatar
-edit: https://github.com/juusoautiosalo/twinrepo-test/edit/main/docs/crane-ilmatar/index.yaml
+edit: https://github.com/juusoautiosalo/twinbase/edit/main/docs/crane-ilmatar/index.yaml
 baseurl: https://dtw.dtp.fi
