@@ -1,0 +1,8 @@
+{
+    "dt-id": "https://dtid.org/7a1adf2a-e5cd-4c13-b388-37bc0646723f",
+    "hosting-iri": "https://dtw.dtp.fi/7a1adf2a-e5cd-4c13-b388-37bc0646723f",
+    "name": "Test twin 1",
+    "description": "Testing twin used in the development of twinbase.",
+    "baseurl": "https://dtw.dtp.fi",
+    "edit": "https://github.com/juusoautiosalo/twinrepo-test/edit/main/docs/7a1adf2a-e5cd-4c13-b388-37bc0646723f/index.yaml"
+}
