@@ -35,7 +35,7 @@
     
     <p>Create new twin <a href="new-twin">here</a></p>
 
-    <p>The files and more info available in the <a href="https://github.com/juusoautiosalo/twinrepo-test">GitHub repo</a>.</p>
+    <p>The files and more info available in the <a id="repolink" href="">GitHub repo</a>.</p>
 
     <p><b>Twins living in this base:</b></p>
 
@@ -62,6 +62,7 @@
           twinLi.appendChild(twinA);
           document.getElementById("twinList").appendChild(twinLi);
           document.getElementById('repo').href = basedoc.repo_url;
+          document.getElementById('repolink').href = basedoc.repo_url;
         }
       })
     }
