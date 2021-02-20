@@ -12,3 +12,5 @@ twins:
   url: https://dtw.dtp.fi/7a1adf2a-e5cd-4c13-b388-37bc0646723f
 - name: AIIC mechatronics hall
   url: https://dtw.dtp.fi/lab-room-K3-143
+- name: Test twin 3
+  url: https://dtw.dtp.fi/9029be1d-88a2-4aba-b5de-85e4e9e804d4
