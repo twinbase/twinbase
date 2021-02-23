@@ -1,0 +1,14 @@
+{
+    "dt-id": "https://dtid.org/2021-02-23_19:08:28_5389f5b8",
+    "hosting-iri": "https://dtw.dtp.fi/2021-02-23_19:08:28_5389f5b8",
+    "name": "Loud Tested Wapiti Of Debate",
+    "description": "Sit labore porro dolore quaerat dolore modi consectetur.",
+    "relations": [
+        {
+            "dt-id": "https://dtid.org/2021-02-23_19:08:28_af74be30",
+            "relationType": "parent"
+        }
+    ],
+    "baseurl": "https://dtw.dtp.fi",
+    "edit": "https://github.com/juusoautiosalo/twinbase/edit/main/docs/2021-02-23_19:08:28_5389f5b8/index.yaml"
+}

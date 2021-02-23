@@ -1,0 +1,14 @@
+{
+    "dt-id": "https://dtid.org/2021-02-23_19:08:28_5f54a71f",
+    "hosting-iri": "https://dtw.dtp.fi/2021-02-23_19:08:28_5f54a71f",
+    "name": "Diligent Toad Of Radical Strength",
+    "description": "Magnam aliquam consectetur modi dolor labore dolore.",
+    "relations": [
+        {
+            "dt-id": "https://dtid.org/2021-02-23_19:08:28_29df7a4a",
+            "relationType": "parent"
+        }
+    ],
+    "baseurl": "https://dtw.dtp.fi",
+    "edit": "https://github.com/juusoautiosalo/twinbase/edit/main/docs/2021-02-23_19:08:28_5f54a71f/index.yaml"
+}
