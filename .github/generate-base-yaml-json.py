@@ -1,6 +1,4 @@
-import os
-import yaml
-import json
+import os, yaml, json, requests
 
 # Get current working directory
 curdir = os.getcwd()
@@ -13,15 +11,22 @@ repo = os.environ["GITHUB_REPOSITORY"] # for local dev, set in bash: export GITH
 github_owner = repo.split('/')[0]
 repo_plain = repo.split('/')[1]
 
-# Fetch hosting URL
-# (Does not take into account user domain set in [user].github.io repo)
+# Detect base URL
 try:
     with open('CNAME') as f:
         lines = f.readlines()
     baseurl = 'https://' + lines[0]
     d['baseurl'] = baseurl
-except:
-    d['baseurl'] = 'https://' + github_owner + '.github.io/' + repo_plain
+except FileNotFoundError:
+    try: 
+        url = 'https://raw.githubusercontent.com/' + github_owner + '/' + github_owner + '.github.io/master/CNAME'
+        r = requests.get(url, allow_redirects=True)
+        r.raise_for_status()
+        baseurl = 'https://' + r.text + '/' + repo
+        d['baseurl'] = baseurl
+    except:
+        baseurl = 'https://' + github_owner + '.github.io/' + repo_plain
+        d['baseurl'] = baseurl
 
 # Fetch owner info from setup.yaml file in repo root and add to dict
 with open('../setup.yaml', 'r') as yamlfile:
