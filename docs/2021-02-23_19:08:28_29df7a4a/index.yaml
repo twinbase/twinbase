@@ -1,11 +1,11 @@
-dtid: https://dtid.org/2021-02-23_19:08:28_29df7a4a
+dt-id: https://dtid.org/2021-02-23_19:08:28_29df7a4a
 hosting-iri: autoassign
 name: Woodoo Friendly Ostrich From Avalon
 description: Voluptatem dolor est eius sit quiquia.
 relations:
-- dtid: https://dtid.org/2021-02-23_19:08:28_3d8f99e2
+- dt-id: https://dtid.org/2021-02-23_19:08:28_3d8f99e2
   relationType: parent
-- dtid: https://dtid.org/2021-02-23_19:08:28_5f54a71f
+- dt-id: https://dtid.org/2021-02-23_19:08:28_5f54a71f
   relationType: child
-- dtid: https://dtid.org/2021-02-23_19:08:28_4beb0ae6
+- dt-id: https://dtid.org/2021-02-23_19:08:28_4beb0ae6
   relationType: child

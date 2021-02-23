@@ -1,11 +1,11 @@
-dtid: https://dtid.org/2021-02-23_19:08:28_3d8f99e2
+dt-id: https://dtid.org/2021-02-23_19:08:28_3d8f99e2
 hosting-iri: autoassign
 name: The Origin at 2021-02-23 19:08:28
 description: Quaerat amet etincidunt velit consectetur ipsum.
 relations:
-- dtid: http://d-t.fi/juuso
+- dt-id: http://d-t.fi/juuso
   relationType: parent
-- dtid: https://dtid.org/2021-02-23_19:08:28_29df7a4a
+- dt-id: https://dtid.org/2021-02-23_19:08:28_29df7a4a
   relationType: child
-- dtid: https://dtid.org/2021-02-23_19:08:28_af74be30
+- dt-id: https://dtid.org/2021-02-23_19:08:28_af74be30
   relationType: child

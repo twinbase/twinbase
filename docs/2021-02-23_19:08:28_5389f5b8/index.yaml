@@ -1,7 +1,7 @@
-dtid: https://dtid.org/2021-02-23_19:08:28_5389f5b8
+dt-id: https://dtid.org/2021-02-23_19:08:28_5389f5b8
 hosting-iri: autoassign
 name: Loud Tested Wapiti Of Debate
 description: Sit labore porro dolore quaerat dolore modi consectetur.
 relations:
-- dtid: https://dtid.org/2021-02-23_19:08:28_af74be30
+- dt-id: https://dtid.org/2021-02-23_19:08:28_af74be30
   relationType: parent

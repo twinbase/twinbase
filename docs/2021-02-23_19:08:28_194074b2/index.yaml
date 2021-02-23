@@ -1,7 +1,7 @@
-dtid: https://dtid.org/2021-02-23_19:08:28_194074b2
+dt-id: https://dtid.org/2021-02-23_19:08:28_194074b2
 hosting-iri: autoassign
 name: Hulking Ultramarine Jackdaw Of Mathematics
 description: Sit modi sit quisquam quaerat modi labore.
 relations:
-- dtid: https://dtid.org/2021-02-23_19:08:28_af74be30
+- dt-id: https://dtid.org/2021-02-23_19:08:28_af74be30
   relationType: parent

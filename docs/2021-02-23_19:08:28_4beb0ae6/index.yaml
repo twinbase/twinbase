@@ -1,7 +1,7 @@
-dtid: https://dtid.org/2021-02-23_19:08:28_4beb0ae6
+dt-id: https://dtid.org/2021-02-23_19:08:28_4beb0ae6
 hosting-iri: autoassign
 name: Honest Realistic Kakapo Of Glory
 description: Sit voluptatem quaerat quiquia.
 relations:
-- dtid: https://dtid.org/2021-02-23_19:08:28_29df7a4a
+- dt-id: https://dtid.org/2021-02-23_19:08:28_29df7a4a
   relationType: parent
