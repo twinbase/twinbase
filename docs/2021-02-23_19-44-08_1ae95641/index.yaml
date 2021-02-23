@@ -1,7 +1,9 @@
 dt-id: https://dtid.org/2021-02-23_19-44-08_1ae95641
-hosting-iri: autoassign
+hosting-iri: https://dtw.dtp.fi/2021-02-23_19-44-08_1ae95641
 name: Proficient Poetic Kingfisher Of Attack
 description: Neque aliquam sit neque eius porro magnam porro.
 relations:
 - dt-id: https://dtid.org/2021-02-23_19-44-08_833d2e85
   relationType: parent
+baseurl: https://dtw.dtp.fi
+edit: https://github.com/juusoautiosalo/twinbase/edit/main/docs/2021-02-23_19-44-08_1ae95641/index.yaml
