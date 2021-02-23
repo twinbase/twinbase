@@ -1,0 +1,7 @@
+dtid: https://dtid.org/2021-02-23_19:08:28_5f54a71f
+hosting-iri: autoassign
+name: Diligent Toad Of Radical Strength
+description: Magnam aliquam consectetur modi dolor labore dolore.
+relations:
+- dtid: https://dtid.org/2021-02-23_19:08:28_29df7a4a
+  relationType: parent

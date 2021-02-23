@@ -1,0 +1,11 @@
+dtid: https://dtid.org/2021-02-23_19:08:28_af74be30
+hosting-iri: autoassign
+name: Lyrical Loyal Labrador Of Tempering
+description: Quaerat non amet non velit quisquam velit amet.
+relations:
+- dtid: https://dtid.org/2021-02-23_19:08:28_3d8f99e2
+  relationType: parent
+- dtid: https://dtid.org/2021-02-23_19:08:28_194074b2
+  relationType: child
+- dtid: https://dtid.org/2021-02-23_19:08:28_5389f5b8
+  relationType: child
