@@ -1,0 +1,11 @@
+dt-id: https://dtid.org/2021-02-23_19-44-08_1c1c93a7
+hosting-iri: autoassign
+name: The Origin at 2021-02-23 19-44-08
+description: Non velit modi dolore aliquam.
+relations:
+- dt-id: http://d-t.fi/juuso
+  relationType: parent
+- dt-id: https://dtid.org/2021-02-23_19-44-08_43680e35
+  relationType: child
+- dt-id: https://dtid.org/2021-02-23_19-44-08_833d2e85
+  relationType: child
