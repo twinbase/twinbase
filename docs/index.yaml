@@ -4,29 +4,31 @@ owner:
 repo_url: https://github.com/juusoautiosalo/twinbase
 new_twin_url: https://github.com/juusoautiosalo/twinbase/new/main?filename=docs/edit_this_with_backspace/index.yaml&value=Paste%20a%20DT%20document%20template%20here
 twins:
+- url: https://dtw.dtp.fi/crane-ilmatar
+  name: Ilmatar crane
 - url: https://dtw.dtp.fi/2021-02-23_19-44-08_e72c61ca
   name: Misty Functional Honeybee Of Defiance
-- url: https://dtw.dtp.fi/juuso
-  name: Juuso Autiosalo
+- url: https://dtw.dtp.fi/2b3ec038-0104-446d-9198-3898ca9342f5
+  name: Testi huvin vuoksi
+- url: https://dtw.dtp.fi/lab-room-K3-143
+  name: AIIC mechatronics hall
 - url: https://dtw.dtp.fi/2021-02-23_19-44-08_d1d5cf66
   name: Divergent Cobalt Rottweiler Of Speed
+- url: https://dtw.dtp.fi/9029be1d-88a2-4aba-b5de-85e4e9e804d4
+  name: Test twin 3
+- url: https://dtw.dtp.fi/2021-02-23_19-44-08_833d2e85
+  name: Unyielding Free Caribou Of Action
+- url: https://dtw.dtp.fi/juuso
+  name: Juuso Autiosalo
+- url: https://dtw.dtp.fi/7a1adf2a-e5cd-4c13-b388-37bc0646723f
+  name: Test twin 1
+- url: https://dtw.dtp.fi/2021-02-23_19-44-08_df0fb3c2
+  name: Didactic Proficient Tortoise Of Devotion
 - url: https://dtw.dtp.fi/2021-02-23_19-44-08_43680e35
   name: Bizarre Honeybee Of Simple Fortitude
+- url: https://dtw.dtp.fi/2021-02-23_19-44-08_1c1c93a7
+  name: The Origin at 2021-02-23 19-44-08
 - url: https://dtw.dtp.fi/2021-02-23_19-44-08_1ae95641
   name: Proficient Poetic Kingfisher Of Attack
 - url: https://dtw.dtp.fi/41cf7a74-558d-4214-bbd9-03865522f717
   name: Test twin 2
-- url: https://dtw.dtp.fi/crane-ilmatar
-  name: Ilmatar crane
-- url: https://dtw.dtp.fi/2021-02-23_19-44-08_1c1c93a7
-  name: The Origin at 2021-02-23 19-44-08
-- url: https://dtw.dtp.fi/2021-02-23_19-44-08_df0fb3c2
-  name: Didactic Proficient Tortoise Of Devotion
-- url: https://dtw.dtp.fi/7a1adf2a-e5cd-4c13-b388-37bc0646723f
-  name: Test twin 1
-- url: https://dtw.dtp.fi/2021-02-23_19-44-08_833d2e85
-  name: Unyielding Free Caribou Of Action
-- url: https://dtw.dtp.fi/lab-room-K3-143
-  name: AIIC mechatronics hall
-- url: https://dtw.dtp.fi/9029be1d-88a2-4aba-b5de-85e4e9e804d4
-  name: Test twin 3
