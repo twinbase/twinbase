@@ -19,7 +19,7 @@
 <body>
 
 <header>
-    <a href="/" class="logo">Twinbase</a>
+    <a id="twinbase" href="" class="logo">Twinbase</a>
     <a id="repo" href="" class="button">Repository</a>
     <a href="http://twinbase.org" class="button">Docs</a>
 </header>
@@ -59,6 +59,7 @@
 	  document.getElementById('dt-id').href = data['dt-id'];
 	  document.getElementById('dt-id').innerHTML = data['dt-id'];
     document.getElementById('edit').href = data.edit;
+    document.getElementById('twinbase').href = data.baseurl;
     document.getElementById('baseurl').href = data.baseurl;
     })
   </script>
