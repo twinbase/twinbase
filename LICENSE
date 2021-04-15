@@ -2,6 +2,14 @@ MIT License
 
 Copyright (c) 2021 Juuso Autiosalo
 
+For file: /docs/static/jsonview.bundle.css
+    Copyright (c) 2020 Pavel Grabovets
+
+For file: /docs/static/jsonview.bundle.js
+    Copyright (c) 2020 Pavel Grabovets
+    Copyright (c) 2021 Juuso Autiosalo Added functionality to show URLs
+        as clickable links and made other minor modifications.
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
