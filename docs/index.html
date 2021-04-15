@@ -17,7 +17,7 @@
 
 <body>
   <header>
-    <a href="/" class="logo">Twinbase</a>
+    <a id="twinbase" href="" class="logo">Twinbase</a>
     <a id="repo" href="" class="button">Repository</a>
     <a href="http://twinbase.org" class="button">Docs</a>
 </header>
@@ -60,6 +60,7 @@
           var twinText = document.createTextNode(basedoc.twins[i].name);
           twinA.appendChild(twinText);
           twinLi.appendChild(twinA);
+          document.getElementById('twinbase').href = basedoc.baseurl;
           document.getElementById("twinList").appendChild(twinLi);
           document.getElementById('repo').href = basedoc.repo_url;
           document.getElementById('repolink').href = basedoc.repo_url;
