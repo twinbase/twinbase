@@ -22,7 +22,7 @@ except FileNotFoundError:
         url = 'https://raw.githubusercontent.com/' + github_owner + '/' + github_owner + '.github.io/master/CNAME'
         r = requests.get(url, allow_redirects=True)
         r.raise_for_status()
-        baseurl = 'https://' + r.text + '/' + repo
+        baseurl = 'https://' + r.text + '/' + repo_plain
         d['baseurl'] = baseurl
     except:
         baseurl = 'https://' + github_owner + '.github.io/' + repo_plain
