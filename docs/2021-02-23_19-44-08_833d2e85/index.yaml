@@ -10,4 +10,4 @@ relations:
 - dt-id: https://dtid.org/2021-02-23_19-44-08_1ae95641
   relationType: child
 baseurl: https://dtw.dtp.fi
-edit: https://github.com/juusoautiosalo/twinbase/edit/main/docs/2021-02-23_19-44-08_833d2e85/index.yaml
+edit: https://github.com/twinbase/twinbase/edit/main/docs/2021-02-23_19-44-08_833d2e85/index.yaml
