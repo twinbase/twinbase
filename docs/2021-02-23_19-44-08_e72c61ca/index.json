@@ -1,6 +1,6 @@
 {
     "dt-id": "https://dtid.org/2021-02-23_19-44-08_e72c61ca",
-    "hosting-iri": "https://dtw.dtp.fi/2021-02-23_19-44-08_e72c61ca",
+    "hosting-iri": "https://twinbase.github.io/twinbase/2021-02-23_19-44-08_e72c61ca",
     "name": "Misty Functional Honeybee Of Defiance",
     "description": "Dolore quiquia quaerat non numquam consectetur.",
     "relations": [
@@ -9,6 +9,6 @@
             "relationType": "parent"
         }
     ],
-    "baseurl": "https://dtw.dtp.fi",
+    "baseurl": "https://twinbase.github.io/twinbase",
     "edit": "https://github.com/twinbase/twinbase/edit/main/docs/2021-02-23_19-44-08_e72c61ca/index.yaml"
 }

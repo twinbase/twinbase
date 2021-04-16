@@ -1,6 +1,6 @@
 {
     "dt-id": "https://dtid.org/2021-02-23_19-44-08_1ae95641",
-    "hosting-iri": "https://dtw.dtp.fi/2021-02-23_19-44-08_1ae95641",
+    "hosting-iri": "https://twinbase.github.io/twinbase/2021-02-23_19-44-08_1ae95641",
     "name": "Proficient Poetic Kingfisher Of Attack",
     "description": "Neque aliquam sit neque eius porro magnam porro.",
     "relations": [
@@ -9,6 +9,6 @@
             "relationType": "parent"
         }
     ],
-    "baseurl": "https://dtw.dtp.fi",
+    "baseurl": "https://twinbase.github.io/twinbase",
     "edit": "https://github.com/twinbase/twinbase/edit/main/docs/2021-02-23_19-44-08_1ae95641/index.yaml"
 }

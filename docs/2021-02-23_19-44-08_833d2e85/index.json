@@ -1,6 +1,6 @@
 {
     "dt-id": "https://dtid.org/2021-02-23_19-44-08_833d2e85",
-    "hosting-iri": "https://dtw.dtp.fi/2021-02-23_19-44-08_833d2e85",
+    "hosting-iri": "https://twinbase.github.io/twinbase/2021-02-23_19-44-08_833d2e85",
     "name": "Unyielding Free Caribou Of Action",
     "description": "Quiquia dolor labore sed sed porro consectetur magnam.",
     "relations": [
@@ -17,6 +17,6 @@
             "relationType": "child"
         }
     ],
-    "baseurl": "https://dtw.dtp.fi",
+    "baseurl": "https://twinbase.github.io/twinbase",
     "edit": "https://github.com/twinbase/twinbase/edit/main/docs/2021-02-23_19-44-08_833d2e85/index.yaml"
 }

@@ -1,6 +1,6 @@
 {
     "dt-id": "https://dtid.org/2021-02-23_19-44-08_1c1c93a7",
-    "hosting-iri": "https://dtw.dtp.fi/2021-02-23_19-44-08_1c1c93a7",
+    "hosting-iri": "https://twinbase.github.io/twinbase/2021-02-23_19-44-08_1c1c93a7",
     "name": "The Origin at 2021-02-23 19-44-08",
     "description": "Non velit modi dolore aliquam.",
     "relations": [
@@ -17,6 +17,6 @@
             "relationType": "child"
         }
     ],
-    "baseurl": "https://dtw.dtp.fi",
+    "baseurl": "https://twinbase.github.io/twinbase",
     "edit": "https://github.com/twinbase/twinbase/edit/main/docs/2021-02-23_19-44-08_1c1c93a7/index.yaml"
 }

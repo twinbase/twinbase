@@ -1,8 +1,8 @@
 {
     "dt-id": "https://dtid.org/41cf7a74-558d-4214-bbd9-03865522f717",
-    "hosting-iri": "https://dtw.dtp.fi/41cf7a74-558d-4214-bbd9-03865522f717",
+    "hosting-iri": "https://twinbase.github.io/twinbase/41cf7a74-558d-4214-bbd9-03865522f717",
     "name": "Test twin 2",
     "description": "A twin for testing the warning signals.",
-    "baseurl": "https://dtw.dtp.fi",
+    "baseurl": "https://twinbase.github.io/twinbase",
     "edit": "https://github.com/twinbase/twinbase/edit/main/docs/41cf7a74-558d-4214-bbd9-03865522f717/index.yaml"
 }
