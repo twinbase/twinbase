@@ -1,9 +1,9 @@
 dt-id: https://dtid.org/2021-02-23_19-44-08_d1d5cf66
-hosting-iri: https://dtw.dtp.fi/2021-02-23_19-44-08_d1d5cf66
+hosting-iri: https://twinbase.github.io/twinbase/2021-02-23_19-44-08_d1d5cf66
 name: Divergent Cobalt Rottweiler Of Speed
 description: Modi magnam sit quiquia.
 relations:
 - dt-id: https://dtid.org/2021-02-23_19-44-08_833d2e85
   relationType: parent
-baseurl: https://dtw.dtp.fi
+baseurl: https://twinbase.github.io/twinbase
 edit: https://github.com/twinbase/twinbase/edit/main/docs/2021-02-23_19-44-08_d1d5cf66/index.yaml

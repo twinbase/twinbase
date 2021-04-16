@@ -1,7 +1,7 @@
 version: '1.0'
 privacy: public
 dt-id: http://d-t.fi/3091b292-6104-4ef3-a30f-8275b46b5ab4
-hosting-iri: https://dtw.dtp.fi/lab-room-K3-143
+hosting-iri: https://twinbase.github.io/twinbase/lab-room-K3-143
 name: AIIC mechatronics hall
 description: A laboratory room located at Aalto University.
 owner:
@@ -17,4 +17,4 @@ relations:
 - dt-id: http://d-t.fi/konecranes-K16052
   relationType: child
 edit: https://github.com/twinbase/twinbase/edit/main/docs/lab-room-K3-143/index.yaml
-baseurl: https://dtw.dtp.fi
+baseurl: https://twinbase.github.io/twinbase

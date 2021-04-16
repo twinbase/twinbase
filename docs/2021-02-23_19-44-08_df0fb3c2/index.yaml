@@ -1,9 +1,9 @@
 dt-id: https://dtid.org/2021-02-23_19-44-08_df0fb3c2
-hosting-iri: https://dtw.dtp.fi/2021-02-23_19-44-08_df0fb3c2
+hosting-iri: https://twinbase.github.io/twinbase/2021-02-23_19-44-08_df0fb3c2
 name: Didactic Proficient Tortoise Of Devotion
 description: Quiquia tempora tempora consectetur sed dolor aliquam sed.
 relations:
 - dt-id: https://dtid.org/2021-02-23_19-44-08_43680e35
   relationType: parent
-baseurl: https://dtw.dtp.fi
+baseurl: https://twinbase.github.io/twinbase
 edit: https://github.com/twinbase/twinbase/edit/main/docs/2021-02-23_19-44-08_df0fb3c2/index.yaml
