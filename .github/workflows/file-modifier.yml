@@ -27,7 +27,7 @@ jobs:
     - name: Setup git
       run: |
         git config --local user.email "57953088+juusoautiosalo@users.noreply.github.com"
-        git config --local user.name "actions-push-test[bot]"
+        git config --local user.name "twinbase-file-modifier-workflow[bot]"
     - name: Install python dependencies
       run: |
         python3 -m pip install --upgrade pip
