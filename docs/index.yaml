@@ -1,8 +1,8 @@
 baseurl: https://dtw.dtp.fi
 owner:
   dt-id: http://d-t.fi/juuso
-repo_url: https://github.com/juusoautiosalo/twinbase
-new_twin_url: https://github.com/juusoautiosalo/twinbase/new/main?filename=docs/edit_this_with_backspace/index.yaml&value=Paste%20a%20DT%20document%20template%20here
+repo_url: https://github.com/twinbase/twinbase
+new_twin_url: https://github.com/twinbase/twinbase/new/main?filename=docs/edit_this_with_backspace/index.yaml&value=Paste%20a%20DT%20document%20template%20here
 twins:
 - url: https://dtw.dtp.fi/crane-ilmatar
   name: Ilmatar crane
