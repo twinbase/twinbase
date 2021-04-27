@@ -1,0 +1,4 @@
+dt-id: https://dtid.org/example-twin-e8fde635-e14a-41d7-85f0-676cd10cae32
+hosting-iri: autoassign
+name: Example twin
+description: This is an example twin to show what a DT document can look like. You can safely remove the folder that contains this document.
