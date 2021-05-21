@@ -52,5 +52,8 @@ There are currently no official support mechanisms for Twinbase, but [Juuso](htt
 
 ## Thanks
 
-Twinbase uses [json-view](https://github.com/pgrabovets/json-view) by [pgrabovets](https://github.com/pgrabovets) to display digital twin documents.
-Thanks for the nice piece of software!
+Twinbase uses
+- [mini.css](https://minicss.org/) to stylize web pages and 
+- [json-view](https://github.com/pgrabovets/json-view) to display digital twin documents.
+
+Thanks to the developers for the nice pieces of software!
