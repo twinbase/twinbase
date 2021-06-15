@@ -13,9 +13,9 @@ Experiences with Twinbase are used to develop further versions of the [digital t
 
 ## Using Twinbase
 
-A web interface for each properly configured Twinbase can found from the URL shown on the `baseurl` field in the [/docs/index.yaml](/docs/index.yaml) file.
+You can browse the web interface of this Twinbase from the URL shown on the `baseurl` field in the [/docs/index.yaml](/docs/index.yaml) file if this Twinbase is properly configured.
 
-To fetch the twin documents in python, you can use the [dtweb-python](https://github.com/juusoautiosalo/dtweb-python) library.
+You can fetch twin documents in Python with the [dtweb-python](https://github.com/juusoautiosalo/dtweb-python) library. Available as `dtweb` from pip.
 
 ## To create your own Twinbase
 
