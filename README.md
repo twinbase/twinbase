@@ -2,7 +2,7 @@
 
 Twinbase is an open source platform for managing and distributing [digital twin documents](https://doi.org/10.1109/ACCESS.2020.3045856).
 It is built on git and can be hosted on free-of-charge GitHub services.
-See an example server live at [dtw.dtp.fi](https://dtw.dtp.fi).
+See an example server live at [dtw.twinbase.org](https://dtw.twinbase.org).
 
 Twinbase is at __*initial development*__ phase and backwards incompatible changes are expected frequently.
 Update mechanisms are not yet implemented.
