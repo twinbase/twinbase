@@ -64,6 +64,14 @@
     })
   </script>
 
+  <script>
+    fetch("../index.json")
+      .then(response => response.json())
+      .then(basedoc => {
+        document.getElementById('repo').href = basedoc.repo_url;
+    });
+  </script>
+
   <script type="text/javascript" src="../static/jsonview.bundle.js"></script>
   
   <script type="text/javascript">
