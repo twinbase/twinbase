@@ -24,8 +24,8 @@ You can fetch twin documents in Python with the [dtweb-python](https://github.co
 1. Create a new repository with the "Use this template" button on the [twinbase/twinbase](https://github.com/twinbase/twinbase) page. (Sign in to GitHub if you can't see the button.)
 2. In the newly created repository, activate GitHub Actions from the Actions tab if necessary, and manually run the "File modifier" workflow. (This will modify the files to match your GitHub account. Running the workflow several times will not cause any harm.)
 3. Activate GitHub Pages from Settings > Pages > Source to `main` branch and `/docs` folder.
-4. A link to Twinbase will be shown at the Pages page. If you have not made any domain customizations, it is in the form \<username\>.github.io/\<repository name\>.
-5. Unfortunately any updates from the template repository must be made manually. But you can also just make another Twinbase and copy your twin folders and files there.
+4. A link to the web interface of Twinbase will be shown at the Pages page. If you have not made any domain name customizations, it is in the form *\<username\>.github.io/\<repository name\>*.
+5. Updates: Unfortunately any updates from the template repository must currently be made manually. But you can also just make another Twinbase and copy your twin folders and files there.
 
 Forks can be used as well and might make updating easier, but their use has not been properly tested.
 
