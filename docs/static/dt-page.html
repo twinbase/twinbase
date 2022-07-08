@@ -26,21 +26,26 @@
 
 <div class="container">
 <div class="row">
-  
+
   <div class="col-md-1 col-lg-3"></div>
   <div class="max600">
 
     <h1>DT document for <span id="name"></span></h1>
-    
+
     <p>DT identifier: <a id="dt-id" href=""></a></p>
-    
+
     <p>You can download the raw <a href="index.json">JSON</a> and <a href="index.yaml">YAML</a> files.</p>
 
-    <p>Edit the document <a id="edit" href="">here</a>.</p>
+    <p>
+      Edit the document in
+      <a id="edit-json" href="">JSON</a>
+      or in
+      <a id="edit" href="">YAML</a>.
+    </p>
 
     <p>Twinbase page <a id="baseurl" href="">here</a>.</p>
-    
-    <p>Browse the DT document below by clicking the arrows.</p> 
+
+    <p>Browse the DT document below by clicking the arrows.</p>
 
     <div class="root"></div>
 
@@ -54,11 +59,12 @@
     fetch('index.json')
     .then(response => response.json())
     .then(data => {
-	  document.getElementById('title').innerHTML = 'Twinbase - ' + data.name;
-	  document.getElementById('name').innerHTML = data.name;
+    document.getElementById('title').innerHTML = 'Twinbase - ' + data.name;
+    document.getElementById('name').innerHTML = data.name;
 	  document.getElementById('dt-id').href = data['dt-id'];
 	  document.getElementById('dt-id').innerHTML = data['dt-id'];
     document.getElementById('edit').href = data.edit;
+    document.getElementById('edit-json').href = data['edit-json'];
     document.getElementById('twinbase').href = data.baseurl;
     document.getElementById('baseurl').href = data.baseurl;
     })
@@ -73,7 +79,7 @@
   </script>
 
   <script type="text/javascript" src="../static/jsonview.bundle.js"></script>
-  
+
   <script type="text/javascript">
     fetch('index.json')
     .then((res)=> {
@@ -83,7 +89,7 @@
       const tree = JsonView.createTree(data);
       JsonView.render(tree, document.querySelector('.root'));
       // JsonView.expandChildren(tree);
-	  JsonView.showNodeChildren(tree);
+    JsonView.showNodeChildren(tree);
     })
     .catch((err) => {
       console.log(err);
