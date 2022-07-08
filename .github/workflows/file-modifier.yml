@@ -31,8 +31,7 @@ jobs:
     - name: Install python dependencies
       run: |
         python3 -m pip install --upgrade pip
-        pip install pyyaml requests dtweb
-        # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install -r requirements.txt
     - name: Modify twin YAMLs
       run: |
         cd docs/
