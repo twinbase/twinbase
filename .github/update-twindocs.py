@@ -59,8 +59,9 @@ with open("modified-yamls.txt", "r") as a_file:
             + data['dt-id'] + ' . Hosting IRI is now ' + data['hosting-iri'] \
             + ' . Please update the DT-ID registry if needed.')
 
-    # Update editing URL
+    # Update editing URLs
     data['edit'] = 'https://github.com/' + repofull + '/edit/main/docs/' + folder + '/index.yaml'
+    data['edit-json'] = 'https://github.com/' + repofull + '/edit/main/docs/' + folder + '/index.json'
     
     # Save DT doc contents in YAML file
     with open(file, 'w') as filew:
