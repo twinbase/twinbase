@@ -38,7 +38,7 @@ with open("modified-jsons.txt", "r") as a_file:
         with open('modified-yamls.txt', 'a') as file_yaml_list:
             file_yaml_list.write(yamlfile + '\n')
     except FileNotFoundError:
-        print('Did not find file, moving to next one')
+        print('Did not find JSON file, moving to next one')
 
 # Process yamls
 print('Process yamls')
@@ -46,39 +46,43 @@ with open("modified-yamls.txt", "r") as a_file:
   for line in a_file:
     file = line.strip()
     print(file)
-    with open(file, 'r') as yamlfile:
-        data = yaml.load(yamlfile, Loader=yaml.FullLoader)
-    data['baseurl'] = baseurl
+    try:
+        with open(file, 'r') as yamlfile:
+            data = yaml.load(yamlfile, Loader=yaml.FullLoader)
+        data['baseurl'] = baseurl
 
-    folder = file.split('/')[1]
-    # Autoassign DT-ID if requested in YAML file
-    if data['dt-id'].split('|')[0] == 'autoassign':
-        data['dt-id'] = os.path.join(data['dt-id'].split('|')[1], folder)
-    
-    # Update DT doc hosting IRI if it doesn't match actual hosting IRI 
-    if not (data['hosting-iri'] == os.path.join(baseurl, folder)):
-        data['hosting-iri'] = os.path.join(baseurl, folder)
-        print('::warning file=' + folder + '/index.yaml::Hosting IRI changed for DT-ID: ' \
-            + data['dt-id'] + ' . Hosting IRI is now ' + data['hosting-iri'] \
-            + ' . Please update the DT-ID registry if needed.')
+        folder = file.split('/')[1]
+        # Autoassign DT-ID if requested in YAML file
+        if data['dt-id'].split('|')[0] == 'autoassign':
+            data['dt-id'] = os.path.join(data['dt-id'].split('|')[1], folder)
 
-    # Update editing URLs
-    data['edit'] = 'https://github.com/' + repofull + '/edit/main/docs/' + folder + '/index.yaml'
-    data['edit-json'] = 'https://github.com/' + repofull + '/edit/main/docs/' + folder + '/index.json'
-    
-    # Save DT doc contents in YAML file
-    with open(file, 'w') as filew:
-        yaml.dump(data, filew, default_flow_style=False, sort_keys=False, allow_unicode=True)
-    # copy yaml to json
-    with open(file[:-10] + 'index.json', 'w') as jsonfilew:
-        json.dump(data, jsonfilew, indent=4)
-    
-    # Test if DT-ID redirects to hosting IRI, give actions error if not
-    if not (dtweb.client.fetch_host_url(data['dt-id']) == data['hosting-iri'] + '/'):
-        print('::error file=' + folder + '/index.yaml::' \
-            + 'DT-ID of ' + data['name'] + ' does not redirect to its hosting IRI!' \
-            + ' ==> Please update the DT-ID registry.' \
-            + ' DT-ID: ' + data['dt-id'] \
-            + ' Hosting IRI: ' + data['hosting-iri'])
-    else:
-        print('Test successful: DT-ID redirects to hosting IRI for ' + data['name'])
+        # Update DT doc hosting IRI if it doesn't match actual hosting IRI 
+        if not (data['hosting-iri'] == os.path.join(baseurl, folder)):
+            data['hosting-iri'] = os.path.join(baseurl, folder)
+            print('::warning file=' + folder + '/index.yaml::Hosting IRI changed for DT-ID: ' \
+                + data['dt-id'] + ' . Hosting IRI is now ' + data['hosting-iri'] \
+                + ' . Please update the DT-ID registry if needed.')
+
+        # Update editing URLs
+        data['edit'] = 'https://github.com/' + repofull + '/edit/main/docs/' + folder + '/index.yaml'
+        data['edit-json'] = 'https://github.com/' + repofull + '/edit/main/docs/' + folder + '/index.json'
+
+        # Save DT doc contents in YAML file
+        with open(file, 'w') as filew:
+            yaml.dump(data, filew, default_flow_style=False, sort_keys=False, allow_unicode=True)
+        # copy yaml to json
+        with open(file[:-10] + 'index.json', 'w') as jsonfilew:
+            json.dump(data, jsonfilew, indent=4)
+
+        # Test if DT-ID redirects to hosting IRI, give actions error if not
+        if not (dtweb.client.fetch_host_url(data['dt-id']) == data['hosting-iri'] + '/'):
+            print('::error file=' + folder + '/index.yaml::' \
+                + 'DT-ID of ' + data['name'] + ' does not redirect to its hosting IRI!' \
+                + ' ==> Please update the DT-ID registry.' \
+                + ' DT-ID: ' + data['dt-id'] \
+                + ' Hosting IRI: ' + data['hosting-iri'])
+        else:
+            print('Test successful: DT-ID redirects to hosting IRI for ' + data['name'])
+            
+    except FileNotFoundError:
+        print('Did not find YAML file, moving to next one')
