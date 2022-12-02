@@ -26,16 +26,19 @@ with open("modified-jsons.txt", "r") as a_file:
   for line in a_file:
     file = line.strip()
     print(file)
-    with open(file, 'r') as jsonfiler:
-        data = json.load(jsonfiler)
-        # print(data)
-    # Save DT doc contents in YAML file
-    yamlfile = file[:-10] + 'index.yaml'
-    with open(yamlfile, 'w') as filew:
-        yaml.dump(data, filew, default_flow_style=False, sort_keys=False, allow_unicode=True)
-    # Add modified yaml to list
-    with open('modified-yamls.txt', 'a') as file_yaml_list:
-        file_yaml_list.write(yamlfile + '\n')
+    try:
+        with open(file, 'r') as jsonfiler:
+            data = json.load(jsonfiler)
+            # print(data)
+        # Save DT doc contents in YAML file
+        yamlfile = file[:-10] + 'index.yaml'
+        with open(yamlfile, 'w') as filew:
+            yaml.dump(data, filew, default_flow_style=False, sort_keys=False, allow_unicode=True)
+        # Add modified yaml to list
+        with open('modified-yamls.txt', 'a') as file_yaml_list:
+            file_yaml_list.write(yamlfile + '\n')
+    except FileNotFoundError:
+        print('Did not find file, moving to next one')
 
 # Process yamls
 print('Process yamls')
