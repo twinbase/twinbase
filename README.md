@@ -22,12 +22,17 @@ You can fetch twin documents in Python with the [dtweb-python](https://github.co
 ## To create your own Twinbase
 
 1. Create a new repository with the "Use this template" button on the [twinbase/twinbase](https://github.com/twinbase/twinbase) page. (Sign in to GitHub if you can't see the button.)
-2. In the newly created repository, activate GitHub Actions from the Actions tab if necessary, and manually run the "File modifier" workflow. (This will modify the files to match your GitHub account. Running the workflow several times will not cause any harm.)
-3. Activate GitHub Pages from Settings > Pages > Source to `main` branch and `/docs` folder.
+2. Make GitHub Actions work
+    1. In the newly created repository, activate GitHub Actions from the Actions tab (if necessary).
+    2. From Settings > Actions > General > Workflow permissions, activate "Read and write permissions" and save. (This allows GitHub actions to push to this repository.)
+    3. Manually run the "File modifier" workflow from: Actions > File Modifier > Run Workflow > Run workflow. (This will modify the files to match your GitHub account. Running the workflow several times will not cause any harm.)
+3. Activate GitHub Pages from Settings > Pages:
+    1. Source: "Deploy from a branch"
+    2. Branch: Select `main` and `/docs` and save.
 4. A link to the web interface of Twinbase will be shown at the Pages page. If you have not made any domain name customizations, it is in the form *\<username\>.github.io/\<repository name\>*.
 5. Updates: Unfortunately any updates from the template repository must currently be made manually. But you can also just make another Twinbase and copy your twin folders and files there.
 
-Forks can be used as well and might make updating easier, but their use has not been properly tested.
+Forks are not recommended for creating a Twinbase instance.
 
 ### Creating new twins to your Twinbase
 
