@@ -10,7 +10,7 @@ Update mechanisms are not yet implemented.
 
 Twinbase is hosted by Aalto University where its development was initiated as a result of the experience from multiple digital twin related projects.
 Twinbase is used as a tool for building the Digital Twin Web introduced in Section III of [this article](https://doi.org/10.1109/ACCESS.2020.3045856).
-A business capable version of Twinbase is being developed in a [Research-to-Business project](https://twinbase.ai) funded by Business Finland.
+A business capable version of Twinbase is being developed in a [Research-to-Business project](https://twinbase.io) funded by Business Finland.
 
 ## Using Twinbase
 
